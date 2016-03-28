@@ -21,7 +21,7 @@ class LionTest (TestCase) :
         self.assertEqual("error", res.action, "wrong")
 
         res = Lion(0, "hunter")
-        self.assertEqual(0, res.state, "wrong")
+        self.assertEqual(1, res.state, "wrong")
         self.assertEqual("run", res.action, "wrong")
 
         res = Lion(0, "antelope")
